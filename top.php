@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
+        .nav {
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .nav li {
+            width: 140px;
+            text-align: center;
+            background-color: #333;
+            float: left;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 2px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 20px;
+        }
+
         .img {
             width: 206px;
             height: 104px;
@@ -74,43 +96,14 @@
 
         </h1>
 
-        <div>
-
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="ログイン"></a>
-                        </li>
-                        <li>
-                            <a href="新規登録"></a>
-                        </li>
-                        <li>
-                            <a href="初めての方へ"></a>
-                        </li>
-                        <li>
-                            <a href="注文する"></a>
-                        </li>
-                        <li>
-                            <a href="●●の特徴"></a>
-                        </li>
-                        <li>
-                            <a href="●●について"></a>
-                        </li>
-                        <li>
-                            <a href="お知らせ"></a>
-                        </li>
-                        <li>
-                            <a href="お問い合わせ"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-
-
     </header>
+
+    <ul id="nav">
+        <li><a href="#">MENU1</a></li>
+        <li><a href="#">MENU2</a></li>
+        <li><a href="#">MENU3</a></li>
+        <li><a href="#">MENU4</a></li>
+    </ul>
 
     <div class="main">
         <!--スライドを表示させる画面-->
@@ -148,29 +141,29 @@
         </div>
 
         <div class="setumei2">
-        <h1>〇〇について</h1>
-        <p>こうやってつかいます</p>
+            <h1>〇〇について</h1>
+            <p>こうやってつかいます</p>
         </div>
 
     </div>
 
-        <h1 class="kosu">コースを選択する</h1>
+    <h1 class="kosu">コースを選択する</h1>
 
-        <div class="erabu">
+    <div class="erabu">
 
-            <div class="erabu1">
-                <a href="menu.php"><img class="kosu1" src="img/top.png" alt=""></a>
-                <p class="text1">●●コース</p>
-            </div>
-
-            <div class="erabu2">
-                <a href="menu.php"><img class="kosu2" src="img/S1554965473430_1.jpg" alt=""></a>
-                <p class="text2">●●コース</ｐ>
-            </div>
-
+        <div class="erabu1">
+            <a href="menu.php"><img class="kosu1" src="img/top.png" alt=""></a>
+            <p class="text1">●●コース</p>
         </div>
 
-        <!-- <h1>●●の特徴</h1>
+        <div class="erabu2">
+            <a href="menu.php"><img class="kosu2" src="img/S1554965473430_1.jpg" alt=""></a>
+            <p class="text2">●●コース</ｐ>
+        </div>
+
+    </div>
+
+    <!-- <h1>●●の特徴</h1>
 
         <div>
 
@@ -183,35 +176,35 @@
             </div>
 
         </div> -->
-
+    <!-- 
         <h1>人気メニュー</h1>
 
         <div>
             <img src="" alt="">
-        </div>
+        </div> -->
 
-        <form action="confirm.php" method="POST">
+    <form action="confirm.php" method="POST">
 
-            <fieldset>
-                <legend>お問い合わせフォーム</legend>
-                <div>
-                    名前: <input type="text" name="todo">
-                </div>
-                <div>
-                    電話番号: <input type="date" name="deadline">
-                </div>
+        <fieldset>
+            <legend>お問い合わせフォーム</legend>
+            <div>
+                名前: <input type="text" name="todo">
+            </div>
+            <div>
+                電話番号: <input type="text" name="deadline">
+            </div>
 
-                <label for="comment">コメント</label>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <label for="comment">コメント</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-                <div>
-                    <button id="btn">送信</button>
-                </div>
+            <div>
+                <button id="btn">送信</button>
+            </div>
 
-            </fieldset>
-        </form>
+        </fieldset>
+    </form>
 
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
