@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        .nav {
+        /* .nav {
             list-style: none;
             overflow: hidden;
         }
@@ -32,6 +32,39 @@
             color: #fff;
             font-weight: bold;
             padding: 20px;
+        } */
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            width: 18%;
+            min-width: 90px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li.current a {
+            color: #F33135;
+        }
+
+        nav ul li a:hover {
+            color: #E7DA66;
+        }
+
+        .main {
+            margin: 50px;
         }
 
         .img {
@@ -83,6 +116,31 @@
             text-align: center;
             font-size: 30px;
         }
+
+        .container {
+            font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .btn-push {
+            display: inline-block;
+            max-width: 180px;
+            text-align: left;
+            background-color: #ffa300;
+            font-size: 16px;
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 4px;
+            border-bottom: 4px solid #d37800;
+        }
+
+        .btn-push:active {
+            transform: translateY(4px);
+            border-bottom: none;
+        }
     </style>
 </head>
 
@@ -98,12 +156,14 @@
 
     </header>
 
-    <ul id="nav">
-        <li><a href="#">MENU1</a></li>
-        <li><a href="#">MENU2</a></li>
-        <li><a href="#">MENU3</a></li>
-        <li><a href="#">MENU4</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li class="current"><a href="#">MENU1</a></li>
+            <li><a href="#">MENU2</a></li>
+            <li><a href="#">MENU3</a></li>
+            <li><a href="#">MENU4</a></li>
+        </ul>
+    </nav>
 
     <div class="main">
         <!--スライドを表示させる画面-->
@@ -156,9 +216,18 @@
             <p class="text1">●●コース</p>
         </div>
 
+        <div class="container">
+            <a href="#" class="btn-push">PUSH ME</a>
+        </div>
+
+
         <div class="erabu2">
             <a href="menu.php"><img class="kosu2" src="img/S1554965473430_1.jpg" alt=""></a>
             <p class="text2">●●コース</ｐ>
+        </div>
+
+        <div class="container">
+            <a href="#" class="btn-push">PUSH ME</a>
         </div>
 
     </div>
